@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EB993381B4DE24500612765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB993371B4DE24500612765 /* AppDelegate.swift */; };
+		6EB9933B1B4DE24500612765 /* Reportacrime_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EB993391B4DE24500612765 /* Reportacrime_ios.xcdatamodeld */; };
+		6EB9933D1B4DE24500612765 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9933C1B4DE24500612765 /* MasterViewController.swift */; };
+		6EB9933F1B4DE24500612765 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9933E1B4DE24500612765 /* DetailViewController.swift */; };
+		6EB993421B4DE24500612765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB993401B4DE24500612765 /* Main.storyboard */; };
+		6EB993441B4DE24500612765 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB993431B4DE24500612765 /* Images.xcassets */; };
+		6EB993471B4DE24500612765 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB993451B4DE24500612765 /* LaunchScreen.xib */; };
+		6EB993531B4DE24500612765 /* Reportacrime_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB993521B4DE24500612765 /* Reportacrime_iosTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EB9934D1B4DE24500612765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EB9932A1B4DE24400612765 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EB993311B4DE24400612765;
+			remoteInfo = "Reportacrime-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6EB993321B4DE24400612765 /* Reportacrime-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reportacrime-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB993361B4DE24400612765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB993371B4DE24500612765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EB9933A1B4DE24500612765 /* Reportacrime_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reportacrime_ios.xcdatamodel; sourceTree = "<group>"; };
+		6EB9933C1B4DE24500612765 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		6EB9933E1B4DE24500612765 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6EB993411B4DE24500612765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EB993431B4DE24500612765 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6EB993461B4DE24500612765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6EB9934C1B4DE24500612765 /* Reportacrime-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reportacrime-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB993511B4DE24500612765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB993521B4DE24500612765 /* Reportacrime_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reportacrime_iosTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EB9932F1B4DE24400612765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB993491B4DE24500612765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EB993291B4DE24400612765 = {
+			isa = PBXGroup;
+			children = (
+				6EB993341B4DE24400612765 /* Reportacrime-ios */,
+				6EB9934F1B4DE24500612765 /* Reportacrime-iosTests */,
+				6EB993331B4DE24400612765 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EB993331B4DE24400612765 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EB993321B4DE24400612765 /* Reportacrime-ios.app */,
+				6EB9934C1B4DE24500612765 /* Reportacrime-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EB993341B4DE24400612765 /* Reportacrime-ios */ = {
+			isa = PBXGroup;
+			children = (
+				6EB993371B4DE24500612765 /* AppDelegate.swift */,
+				6EB9933C1B4DE24500612765 /* MasterViewController.swift */,
+				6EB9933E1B4DE24500612765 /* DetailViewController.swift */,
+				6EB993401B4DE24500612765 /* Main.storyboard */,
+				6EB993431B4DE24500612765 /* Images.xcassets */,
+				6EB993451B4DE24500612765 /* LaunchScreen.xib */,
+				6EB993391B4DE24500612765 /* Reportacrime_ios.xcdatamodeld */,
+				6EB993351B4DE24400612765 /* Supporting Files */,
+			);
+			path = "Reportacrime-ios";
+			sourceTree = "<group>";
+		};
+		6EB993351B4DE24400612765 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EB993361B4DE24400612765 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EB9934F1B4DE24500612765 /* Reportacrime-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EB993521B4DE24500612765 /* Reportacrime_iosTests.swift */,
+				6EB993501B4DE24500612765 /* Supporting Files */,
+			);
+			path = "Reportacrime-iosTests";
+			sourceTree = "<group>";
+		};
+		6EB993501B4DE24500612765 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EB993511B4DE24500612765 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EB993311B4DE24400612765 /* Reportacrime-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB993561B4DE24500612765 /* Build configuration list for PBXNativeTarget "Reportacrime-ios" */;
+			buildPhases = (
+				6EB9932E1B4DE24400612765 /* Sources */,
+				6EB9932F1B4DE24400612765 /* Frameworks */,
+				6EB993301B4DE24400612765 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reportacrime-ios";
+			productName = "Reportacrime-ios";
+			productReference = 6EB993321B4DE24400612765 /* Reportacrime-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EB9934B1B4DE24500612765 /* Reportacrime-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB993591B4DE24500612765 /* Build configuration list for PBXNativeTarget "Reportacrime-iosTests" */;
+			buildPhases = (
+				6EB993481B4DE24500612765 /* Sources */,
+				6EB993491B4DE24500612765 /* Frameworks */,
+				6EB9934A1B4DE24500612765 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EB9934E1B4DE24500612765 /* PBXTargetDependency */,
+			);
+			name = "Reportacrime-iosTests";
+			productName = "Reportacrime-iosTests";
+			productReference = 6EB9934C1B4DE24500612765 /* Reportacrime-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EB9932A1B4DE24400612765 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Andres Revolledo";
+				TargetAttributes = {
+					6EB993311B4DE24400612765 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6EB9934B1B4DE24500612765 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6EB993311B4DE24400612765;
+					};
+				};
+			};
+			buildConfigurationList = 6EB9932D1B4DE24400612765 /* Build configuration list for PBXProject "Reportacrime-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EB993291B4DE24400612765;
+			productRefGroup = 6EB993331B4DE24400612765 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EB993311B4DE24400612765 /* Reportacrime-ios */,
+				6EB9934B1B4DE24500612765 /* Reportacrime-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EB993301B4DE24400612765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB993421B4DE24500612765 /* Main.storyboard in Resources */,
+				6EB993471B4DE24500612765 /* LaunchScreen.xib in Resources */,
+				6EB993441B4DE24500612765 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB9934A1B4DE24500612765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EB9932E1B4DE24400612765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB9933B1B4DE24500612765 /* Reportacrime_ios.xcdatamodeld in Sources */,
+				6EB993381B4DE24500612765 /* AppDelegate.swift in Sources */,
+				6EB9933D1B4DE24500612765 /* MasterViewController.swift in Sources */,
+				6EB9933F1B4DE24500612765 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB993481B4DE24500612765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB993531B4DE24500612765 /* Reportacrime_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EB9934E1B4DE24500612765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EB993311B4DE24400612765 /* Reportacrime-ios */;
+			targetProxy = 6EB9934D1B4DE24500612765 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EB993401B4DE24500612765 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EB993411B4DE24500612765 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EB993451B4DE24500612765 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EB993461B4DE24500612765 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EB993541B4DE24500612765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EB993551B4DE24500612765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EB993571B4DE24500612765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Reportacrime-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6EB993581B4DE24500612765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Reportacrime-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6EB9935A1B4DE24500612765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Reportacrime-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reportacrime-ios.app/Reportacrime-ios";
+			};
+			name = Debug;
+		};
+		6EB9935B1B4DE24500612765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Reportacrime-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reportacrime-ios.app/Reportacrime-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EB9932D1B4DE24400612765 /* Build configuration list for PBXProject "Reportacrime-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB993541B4DE24500612765 /* Debug */,
+				6EB993551B4DE24500612765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB993561B4DE24500612765 /* Build configuration list for PBXNativeTarget "Reportacrime-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB993571B4DE24500612765 /* Debug */,
+				6EB993581B4DE24500612765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6EB993591B4DE24500612765 /* Build configuration list for PBXNativeTarget "Reportacrime-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB9935A1B4DE24500612765 /* Debug */,
+				6EB9935B1B4DE24500612765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EB993391B4DE24500612765 /* Reportacrime_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EB9933A1B4DE24500612765 /* Reportacrime_ios.xcdatamodel */,
+			);
+			currentVersion = 6EB9933A1B4DE24500612765 /* Reportacrime_ios.xcdatamodel */;
+			path = Reportacrime_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6EB9932A1B4DE24400612765 /* Project object */;
+}
