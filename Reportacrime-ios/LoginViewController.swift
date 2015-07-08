@@ -12,7 +12,6 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let manager =  AFHTTPRequestOperationManager()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
