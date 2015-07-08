@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7ED2AC1B4DE3EF0098CA2F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2A71B4DE3EF0098CA2F /* HistoryViewController.swift */; };
+		6E7ED2AD1B4DE3EF0098CA2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2A81B4DE3EF0098CA2F /* LoginViewController.swift */; };
+		6E7ED2AE1B4DE3EF0098CA2F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2A91B4DE3EF0098CA2F /* MenuViewController.swift */; };
+		6E7ED2AF1B4DE3EF0098CA2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2AA1B4DE3EF0098CA2F /* RegisterViewController.swift */; };
+		6E7ED2B01B4DE3EF0098CA2F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2AB1B4DE3EF0098CA2F /* ReportViewController.swift */; };
+		6E7ED2B21B4DE3FA0098CA2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2B11B4DE3FA0098CA2F /* MapViewController.swift */; };
+		6E7ED2B41B4DE4070098CA2F /* CrimeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2B31B4DE4070098CA2F /* CrimeDetailViewController.swift */; };
 		6EB993381B4DE24500612765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB993371B4DE24500612765 /* AppDelegate.swift */; };
 		6EB9933B1B4DE24500612765 /* Reportacrime_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EB993391B4DE24500612765 /* Reportacrime_ios.xcdatamodeld */; };
-		6EB9933D1B4DE24500612765 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9933C1B4DE24500612765 /* MasterViewController.swift */; };
 		6EB9933F1B4DE24500612765 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9933E1B4DE24500612765 /* DetailViewController.swift */; };
 		6EB993421B4DE24500612765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB993401B4DE24500612765 /* Main.storyboard */; };
 		6EB993441B4DE24500612765 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB993431B4DE24500612765 /* Images.xcassets */; };
@@ -28,11 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E7ED2A71B4DE3EF0098CA2F /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		6E7ED2A81B4DE3EF0098CA2F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6E7ED2A91B4DE3EF0098CA2F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6E7ED2AA1B4DE3EF0098CA2F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6E7ED2AB1B4DE3EF0098CA2F /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		6E7ED2B11B4DE3FA0098CA2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6E7ED2B31B4DE4070098CA2F /* CrimeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeDetailViewController.swift; sourceTree = "<group>"; };
 		6EB993321B4DE24400612765 /* Reportacrime-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reportacrime-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB993361B4DE24400612765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EB993371B4DE24500612765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EB9933A1B4DE24500612765 /* Reportacrime_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reportacrime_ios.xcdatamodel; sourceTree = "<group>"; };
-		6EB9933C1B4DE24500612765 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		6EB9933E1B4DE24500612765 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6EB993411B4DE24500612765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EB993431B4DE24500612765 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -81,8 +93,14 @@
 		6EB993341B4DE24400612765 /* Reportacrime-ios */ = {
 			isa = PBXGroup;
 			children = (
+				6E7ED2B31B4DE4070098CA2F /* CrimeDetailViewController.swift */,
+				6E7ED2B11B4DE3FA0098CA2F /* MapViewController.swift */,
+				6E7ED2A71B4DE3EF0098CA2F /* HistoryViewController.swift */,
+				6E7ED2A81B4DE3EF0098CA2F /* LoginViewController.swift */,
+				6E7ED2A91B4DE3EF0098CA2F /* MenuViewController.swift */,
+				6E7ED2AA1B4DE3EF0098CA2F /* RegisterViewController.swift */,
+				6E7ED2AB1B4DE3EF0098CA2F /* ReportViewController.swift */,
 				6EB993371B4DE24500612765 /* AppDelegate.swift */,
-				6EB9933C1B4DE24500612765 /* MasterViewController.swift */,
 				6EB9933E1B4DE24500612765 /* DetailViewController.swift */,
 				6EB993401B4DE24500612765 /* Main.storyboard */,
 				6EB993431B4DE24500612765 /* Images.xcassets */,
@@ -218,10 +236,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7ED2B01B4DE3EF0098CA2F /* ReportViewController.swift in Sources */,
 				6EB9933B1B4DE24500612765 /* Reportacrime_ios.xcdatamodeld in Sources */,
+				6E7ED2B41B4DE4070098CA2F /* CrimeDetailViewController.swift in Sources */,
+				6E7ED2AE1B4DE3EF0098CA2F /* MenuViewController.swift in Sources */,
+				6E7ED2AF1B4DE3EF0098CA2F /* RegisterViewController.swift in Sources */,
+				6E7ED2B21B4DE3FA0098CA2F /* MapViewController.swift in Sources */,
 				6EB993381B4DE24500612765 /* AppDelegate.swift in Sources */,
-				6EB9933D1B4DE24500612765 /* MasterViewController.swift in Sources */,
 				6EB9933F1B4DE24500612765 /* DetailViewController.swift in Sources */,
+				6E7ED2AD1B4DE3EF0098CA2F /* LoginViewController.swift in Sources */,
+				6E7ED2AC1B4DE3EF0098CA2F /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +441,7 @@
 				6EB993581B4DE24500612765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EB993591B4DE24500612765 /* Build configuration list for PBXNativeTarget "Reportacrime-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +450,7 @@
 				6EB9935B1B4DE24500612765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

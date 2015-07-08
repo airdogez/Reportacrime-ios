@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Category" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasCrimes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Crime" inverseName="belongsToCategory" inverseEntity="Crime" syncable="YES"/>
+    </entity>
+    <entity name="Crime" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="report_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="belongsToCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="hasCrimes" inverseEntity="Category" syncable="YES"/>
+        <relationship name="belongsToDistrict" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="District" inverseName="hasCrimes" inverseEntity="District" syncable="YES"/>
+        <relationship name="belongsToUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="hasCrimes" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="District" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasCrimes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Crime" inverseName="belongsToDistrict" inverseEntity="Crime" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="hasCrimes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Crime" inverseName="belongsToUser" inverseEntity="Crime" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="Crime" positionX="225" positionY="-69" width="128" height="163"/>
+        <element name="User" positionX="-189" positionY="11" width="128" height="118"/>
+        <element name="Category" positionX="-54" positionY="171" width="128" height="88"/>
+        <element name="District" positionX="27" positionY="72" width="128" height="90"/>
     </elements>
 </model>
