@@ -12,8 +12,12 @@ import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,7 +25,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 

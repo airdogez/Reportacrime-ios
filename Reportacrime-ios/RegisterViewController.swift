@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var lastnameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +39,25 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func registerNewAccount(sender: AnyObject) {
+        let name: String = nameTextField.text
+        let lastname: String = lastnameTextField.text
+        let email: String = emailTextField.text
+        let phone: String = phoneTextField.text
+        let password: String = passwordTextField.text
+        
+        let parameters = [
+            "user":[
+                "name":name,
+                "lastname":lastname,
+                "email":email,
+                "phone":phone,
+                "password":password
+            ]
+        ]
+        
+        Alamofire.request(.POST, "http://mobdev-aqws3.c9.io/users.json", parameters: parameters, encoding: .JSON)
+        
+    }
 
 }

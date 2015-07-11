@@ -51,6 +51,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Report a Crime - Login" id="0ij-9Q-qvY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="fRY-pa-GZS" id="vWm-S8-Xlp"/>
+                        <outlet property="passwordTextField" destination="0B7-pg-DCq" id="QIc-Nk-2NI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,13 +72,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27t-Ec-vhd">
-                                <rect key="frame" x="179" y="535" width="57" height="30"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" white="0.95803351150000005" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KTc-U3-fTm">
                                 <rect key="frame" x="102" y="110" width="210" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -105,7 +102,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-8L-zqb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-8L-zqb">
                                 <rect key="frame" x="178" y="648" width="59" height="30"/>
                                 <state key="normal" title="Go back">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,11 +112,33 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="xBp-eF-MHq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27t-Ec-vhd">
+                                <rect key="frame" x="179" y="636" width="57" height="30"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="0.95803351150000005" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerNewAccount:" destination="mLJ-Vq-lVV" eventType="touchUpInside" id="u2g-5E-Muj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.5568627451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RTj-8L-zqb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="E9y-wb-lC1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="3HR-2Z-J2x" id="8cA-x5-Dbf"/>
+                        <outlet property="lastnameTextField" destination="kau-8c-ErW" id="s6Z-oq-G42"/>
+                        <outlet property="nameTextField" destination="KTc-U3-fTm" id="1IF-M0-g1a"/>
+                        <outlet property="passwordTextField" destination="6mK-uY-xaS" id="MHj-SP-s2i"/>
+                        <outlet property="phoneTextField" destination="h5a-LC-ony" id="qzi-bJ-5Sg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMR-lZ-aHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -548,8 +567,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4cQ-SM-geJ"/>
         <segue reference="6cr-rj-Icf"/>
-        <segue reference="VQn-bF-yfK"/>
+        <segue reference="5Xn-aR-la0"/>
+        <segue reference="xBp-eF-MHq"/>
     </inferredMetricsTieBreakers>
 </document>
