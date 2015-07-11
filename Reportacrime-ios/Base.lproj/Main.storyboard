@@ -32,9 +32,6 @@
                                     <color key="titleColor" white="0.95803351150000005" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="V7A-Vw-3DR" kind="show" id="5Xn-aR-la0"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsa-t7-Nb1">
                                 <rect key="frame" x="126" y="583" width="162" height="30"/>
@@ -44,6 +41,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="mLJ-Vq-lVV" kind="show" id="QF3-Nr-OLA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FX-mo-nhx">
+                                <rect key="frame" x="184" y="478" width="46" height="30"/>
+                                <state key="normal" title="Log-in">
+                                    <color key="titleColor" white="0.95803351150000005" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MDy-yb-Fv1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-552" y="690"/>
+            <point key="canvasLocation" x="-1484" y="1554"/>
         </scene>
         <!--Register-->
         <scene sceneID="3XV-sR-edm">
@@ -109,7 +116,7 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="xBp-eF-MHq"/>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" identifier="goto_register" id="xBp-eF-MHq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27t-Ec-vhd">
@@ -142,12 +149,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMR-lZ-aHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-552" y="1550"/>
+            <point key="canvasLocation" x="-2023" y="1554"/>
         </scene>
         <!--Report a Crime - Menu-->
         <scene sceneID="sN7-h3-YnG">
             <objects>
-                <viewController id="V7A-Vw-3DR" customClass="MenuViewController" sceneMemberID="viewController">
+                <viewController id="V7A-Vw-3DR" customClass="MenuViewController" customModule="Reportacrime_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PgP-aL-z5O"/>
                         <viewControllerLayoutGuide type="bottom" id="t6E-zp-ebD"/>
@@ -178,15 +185,25 @@
                                     <segue destination="1uo-wk-9e4" kind="show" id="hVW-ub-ZEb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMM-7D-XN8">
+                                <rect key="frame" x="181" y="638" width="53" height="30"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" white="0.95803351150000005" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="V7A-Vw-3DR" eventType="touchUpInside" id="1Ni-3j-XMQ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-XL-xz0">
-                                <rect key="frame" x="120" y="534" width="175" height="36"/>
+                                <rect key="frame" x="120" y="531" width="175" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Crime report history">
                                     <color key="titleColor" white="0.95803351150000005" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Awe-Pe-fUf" kind="show" id="qg8-3i-vcx"/>
+                                    <segue destination="Awe-Pe-fUf" kind="show" identifier="goto_history" id="Qc8-pU-xw5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -194,10 +211,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Report a Crime - Menu" id="rUi-D7-ClV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="goto_login" id="5fh-XO-aWO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xRl-YS-fB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="690"/>
+            <point key="canvasLocation" x="-1484" y="690"/>
         </scene>
         <!--Map of Crimes-->
         <scene sceneID="xDB-R8-rI6">
@@ -222,12 +242,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IB5-Kk-Sej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="690"/>
+            <point key="canvasLocation" x="-928" y="690"/>
         </scene>
         <!--Crime Report History-->
         <scene sceneID="uFs-oJ-XXk">
             <objects>
-                <viewController id="Awe-Pe-fUf" customClass="HistoryViewController" sceneMemberID="viewController">
+                <viewController id="Awe-Pe-fUf" customClass="HistoryViewController" customModule="Reportacrime_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Icr-o1-i3v"/>
                         <viewControllerLayoutGuide type="bottom" id="JVm-I0-3Fr"/>
@@ -236,38 +256,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-nb-c6d">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <tableView clipsSubviews="YES" tag="10" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-nb-c6d">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell tag="101" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReportCell" id="hRa-XG-B2W">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hRa-XG-B2W" id="0sD-eC-cjG">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Placeholder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo3-WZ-1Kv">
-                                                    <rect key="frame" x="143" y="11" width="128" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Y7T-bF-XsX" kind="show" id="o7H-VO-yqH"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Awe-Pe-fUf" id="1fV-ts-ulf"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Crime Report History" id="lYP-XH-LMX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="historyTable" destination="YeF-nb-c6d" id="CjN-d6-QIc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6Q-uq-QAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="1550"/>
+            <point key="canvasLocation" x="-928" y="1580"/>
         </scene>
         <!--Report Detail-->
         <scene sceneID="LbJ-SQ-YZm">
@@ -360,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3a-9u-4ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="1550"/>
+            <point key="canvasLocation" x="-414" y="1554"/>
         </scene>
         <!--Create new crime report-->
         <scene sceneID="iHO-CI-CUh">
@@ -439,7 +446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvc-43-sHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="-176"/>
+            <point key="canvasLocation" x="-1484" y="-156"/>
         </scene>
         <!--Review Report-->
         <scene sceneID="MDf-p7-P67">
@@ -544,7 +551,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNK-n3-hmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="-176"/>
+            <point key="canvasLocation" x="-938" y="-156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xsQ-rQ-bQh">
@@ -558,17 +565,17 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="VQn-bF-yfK"/>
+                        <segue destination="V7A-Vw-3DR" kind="relationship" relationship="rootViewController" id="z31-rI-7cq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jg-6t-fvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1075" y="690"/>
+            <point key="canvasLocation" x="-2023" y="690"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="6cr-rj-Icf"/>
-        <segue reference="5Xn-aR-la0"/>
-        <segue reference="xBp-eF-MHq"/>
+        <segue reference="z31-rI-7cq"/>
+        <segue reference="5fh-XO-aWO"/>
     </inferredMetricsTieBreakers>
 </document>

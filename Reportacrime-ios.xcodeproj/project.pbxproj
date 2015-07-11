@@ -12,6 +12,7 @@
 		6E2972391B4DEB2600EE9CB8 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2972241B4DEAA900EE9CB8 /* SwiftyJSON.framework */; };
 		6E29723A1B4DEB2600EE9CB8 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2972241B4DEAA900EE9CB8 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E34034F1B4EFA1000CF4A7D /* ReviewReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E34034E1B4EFA1000CF4A7D /* ReviewReportViewController.swift */; };
+		6E3403571B50E4E400CF4A7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3403561B50E4E400CF4A7D /* User.swift */; };
 		6E7ED2AC1B4DE3EF0098CA2F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2A71B4DE3EF0098CA2F /* HistoryViewController.swift */; };
 		6E7ED2AD1B4DE3EF0098CA2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2A81B4DE3EF0098CA2F /* LoginViewController.swift */; };
 		6E7ED2AE1B4DE3EF0098CA2F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED2A91B4DE3EF0098CA2F /* MenuViewController.swift */; };
@@ -127,6 +128,8 @@
 		6E2971FE1B4DEA5D00EE9CB8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		6E29721C1B4DEAA900EE9CB8 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		6E34034E1B4EFA1000CF4A7D /* ReviewReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewReportViewController.swift; sourceTree = "<group>"; };
+		6E3403561B50E4E400CF4A7D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6E3403581B51175E00CF4A7D /* Reportacrime_ios 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Reportacrime_ios 2.xcdatamodel"; sourceTree = "<group>"; };
 		6E7ED2A71B4DE3EF0098CA2F /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		6E7ED2A81B4DE3EF0098CA2F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6E7ED2A91B4DE3EF0098CA2F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +230,7 @@
 				6EB993391B4DE24500612765 /* Reportacrime_ios.xcdatamodeld */,
 				6EB993351B4DE24400612765 /* Supporting Files */,
 				6E34034E1B4EFA1000CF4A7D /* ReviewReportViewController.swift */,
+				6E3403561B50E4E400CF4A7D /* User.swift */,
 			);
 			path = "Reportacrime-ios";
 			sourceTree = "<group>";
@@ -436,6 +440,7 @@
 				6E34034F1B4EFA1000CF4A7D /* ReviewReportViewController.swift in Sources */,
 				6E7ED2B21B4DE3FA0098CA2F /* MapViewController.swift in Sources */,
 				6EB993381B4DE24500612765 /* AppDelegate.swift in Sources */,
+				6E3403571B50E4E400CF4A7D /* User.swift in Sources */,
 				6EB9933F1B4DE24500612765 /* DetailViewController.swift in Sources */,
 				6E7ED2AD1B4DE3EF0098CA2F /* LoginViewController.swift in Sources */,
 				6E7ED2AC1B4DE3EF0098CA2F /* HistoryViewController.swift in Sources */,
@@ -661,9 +666,10 @@
 		6EB993391B4DE24500612765 /* Reportacrime_ios.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6E3403581B51175E00CF4A7D /* Reportacrime_ios 2.xcdatamodel */,
 				6EB9933A1B4DE24500612765 /* Reportacrime_ios.xcdatamodel */,
 			);
-			currentVersion = 6EB9933A1B4DE24500612765 /* Reportacrime_ios.xcdatamodel */;
+			currentVersion = 6E3403581B51175E00CF4A7D /* Reportacrime_ios 2.xcdatamodel */;
 			path = Reportacrime_ios.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

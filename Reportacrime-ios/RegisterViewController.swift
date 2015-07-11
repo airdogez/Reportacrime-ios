@@ -57,6 +57,25 @@ class RegisterViewController: UIViewController {
         ]
         
         Alamofire.request(.POST, "http://mobdev-aqws3.c9.io/users.json", parameters: parameters, encoding: .JSON)
+            .responseJSON{ (request, response, 	JSON, error) in
+                //TODO: If registration succesful exit view
+                //If registration failed show message
+                println(JSON)
+                if( error != nil){
+                    //If an error happened, you couldnt sign in
+                    var alertView:UIAlertView = UIAlertView()
+                    alertView.title = "Registration Failed!"
+                    alertView.message = "Couldnt Registrate"
+                    alertView.delegate = self
+                    alertView.addButtonWithTitle("OK")
+                    alertView.show()
+                }
+                else {
+                    //If it registrated succesfuly, Go back.
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                    
+                }
+        }
         
     }
 

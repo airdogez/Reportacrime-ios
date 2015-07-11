@@ -7,9 +7,18 @@
 //
 
 import UIKit
+import CoreData
+import Alamofire
 
 class MenuViewController: UIViewController {
-
+    
+    var name = String()
+    var lastname = String()
+    var email = String()
+    var token = String()
+    var id = Int()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +40,33 @@ class MenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
+        if (isLoggedIn != 1) {
+            self.performSegueWithIdentifier("goto_login", sender: self)
+        } else {
+            
+            name = prefs.stringForKey("NAME")!
+            lastname = prefs.stringForKey("LASTNAME")!
+            email = prefs.stringForKey("EMAIL")!
+            token = prefs.stringForKey("TOKEN")!
+            id = prefs.integerForKey("ID") as Int
+            
+        }
+        
+    }
+    @IBAction func goToCrimeReportHistory(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func logout(sender: AnyObject) {
+        var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        prefs.setInteger(0, forKey: "ISLOGGEDIN")
+        prefs.synchronize()
+        self.performSegueWithIdentifier("goto_login", sender: self)
+    }
+	
 }
